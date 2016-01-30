@@ -303,8 +303,9 @@ footer{
 }
 @mixin make-pretty-btn($width,$radius){
     width: $width;
+    //extra credit math
     height: $width * 0.4;
-    border-radius: $radius;
+    border-radius: $radius*($width/100px);
 }
 
 .Btn{

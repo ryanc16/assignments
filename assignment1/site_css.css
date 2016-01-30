@@ -199,7 +199,7 @@ footer {
 .Btn, .submitBtn, .cancelBtn {
   width: 120px;
   height: 48px;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 5px double #555;
   padding: 10px;
   color: #EEE;
