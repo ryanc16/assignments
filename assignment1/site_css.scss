@@ -1,0 +1,297 @@
+/*CSS Document*/
+//VARIABLES
+$baseBackgroundColor: #1E4456;
+$darkBackgroundColor: #0D3345;
+$neonUnlit: #2B617B;
+$neonLit: lightblue;
+$fontColor: #DDD;
+$linkVisited: #CF81FE;
+
+//Import fancy neon font
+@font-face {
+    font-family: Neon;
+    src: url(HARLOWSI.TTF) format("truetype");
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+body{
+	margin: 0;
+	margin-top: 125px;
+	width:100%;
+	min-width: 720px;
+	font-family: Arial;
+	color: $fontColor;
+	background-color: $baseBackgroundColor;
+}
+
+header{
+	width: 100%;
+	font-family: "Narkisim";
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #333;
+	display: block;
+	position: fixed;
+	top: 0px;
+	background-image:url(../images/header-back-trans.png);
+	background-size:contain;
+	background-repeat:repeat-x;
+	background-origin:border-box;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+	color: $fontColor;
+
+    span{
+        position:fixed;
+
+        font-style: normal;
+        font-variant: small-caps;
+        margin: auto;
+        margin-top: 18px;
+        margin-left:50px;
+        font-size:42px;
+        color: $fontColor;
+        text-shadow: 0 0 15px rgba(0,0,0,0.8);
+        letter-spacing: 2px;
+        
+        &:hover{
+            text-shadow:  -3px -1px 3px #000,0 0 50px $fontColor;
+            cursor: default;
+        }
+    }
+}
+//NAVIGATION STYLES
+nav{
+	min-width: 1280px;
+
+    a{
+        text-decoration: none;
+    }
+
+    ul{
+        font-family: Neon;
+        margin: 0;
+        display: inline-block;
+        width: 100%;
+        padding-top: 16px;
+        font-size: 24px;
+        text-shadow: -1px 1px 0px black;
+        text-align: center;
+        letter-spacing: 2px;
+        list-style: none;
+        
+        li{
+            display: inline-block;
+            cursor: pointer;
+            padding: 5px;
+            box-shadow: -3px 0 12px rgba(0,0,0,0.7),
+                        inset -3px -3px 10px rgba(0,0,0,0.4);
+            border-radius: 3px 25px 3px 15px / 3px 25px 3px 15px;
+            border: 5px double $neonUnlit;
+            
+            a{
+                color: #777;
+            }
+            
+            &:hover{
+            border-color: $neonLit;
+            box-shadow: 0 0 5px $neonLit,
+                        0 0 150px $neonLit,
+                        inset 0 0 10px $neonLit;
+            text-shadow: -1px 1px 0px black,
+                         0 0 5px lightgray;
+                a{
+                    color: $fontColor;   
+                }
+                
+                ul li a{
+                    color: #777;
+                }
+                
+                ul li:hover a{
+                    color: $fontColor;
+                }
+            }
+            
+            ul{
+                background-color: #333;
+                background-image:url(../images/header-back-trans.png);
+                background-repeat: repeat;
+                border: 5px double $neonUnlit;
+                box-shadow: -3px 0 12px rgba(0,0,0,0.7),
+                            inset -3px -3px 10px rgba(0,0,0,0.4);
+                border-radius: 10px;
+                float: left;
+                position: relative;
+                top: 65px;
+                text-align: left;
+                
+                &:hover{
+                    border: 5px double $neonLit;
+                    box-shadow: 0 0 5px $neonLit,
+                                0 0 150px $neonLit,
+                                inset 0 0 10px $neonLit;
+                }
+                
+                li{
+                    text-align: left;
+                    font-size:smaller;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    border: none;
+                    box-shadow: none;
+                    border-radius: 0px;
+                    
+                    &:hover{
+                        text-shadow: -1px 1px 0px black,
+                                     0 0 5px lightgray;
+                                     box-shadow: none;
+                    }
+                }
+                
+                &:last-child{
+                    padding-bottom: 5px;
+                }
+
+                &:first-child{
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+    li{
+        ul{
+            display: none;
+            width: 10em;
+            background-color: transparent;
+            
+            li ul li {
+                display:none;
+            }
+        }
+        
+        &:hover ul, .hover ul {
+           display: block;
+           position: absolute;
+           z-index:5;
+           margin: 0;
+           padding: 0;
+            
+            li, .hover li {
+                float: none;
+           }
+        }
+        
+    }    
+}
+
+.headerListItemLitUp{
+	/*border-color: $neonUnlit;*/
+	border-color: $neonLit;
+	color: $fontColor;
+	box-shadow: 0 0 5px $neonLit,
+				0 0 150px $neonLit,
+				inset 0 0 10px $neonLit;
+	text-shadow: -1px 1px 0px black,
+				 0 0 5px lightgray;
+}
+//HEADER STYLES
+header{
+    aside{
+        float: right;
+        position: relative;
+        top: -3em;
+        right: 1em;
+        
+        a{
+            color: $fontColor;
+	       text-decoration: none;
+            
+            &:hover{
+                text-decoration: underline;
+                cursor:pointer;
+            }
+        }
+    }
+}
+
+h1{
+	
+	font-size:60px;
+	letter-spacing: 2px;
+	width:100%;
+	text-align: center;
+	color: $fontColor;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+h3{
+	text-align:center;
+}
+//CONTAINER STYLES
+#container{
+	width: 70%;
+	min-height: 666px;
+	
+	background-color: $darkBackgroundColor;
+	margin: auto;
+	margin-bottom: 2em;
+	padding: 25px 10px;
+	border-radius: 20px;
+	border: 5px double $neonUnlit;
+	box-shadow: 0 0 50px rgba(0,0,0,0.3);
+    
+    a{
+        color: $neonLit;
+        
+        &:visited{
+            color: $linkVisited;
+        }
+    }
+}
+
+#containerHidden{
+	width: 90%;
+	min-height: 666px;
+	background-color: transparent;
+	margin: auto;
+	margin-bottom: 2em;
+	padding: 25px 10px;
+	border-radius: 20px;
+	border: 5px double rgba(0,0,0,0.0);
+	box-shadow: none;
+}
+
+figure img{
+	margin: 10px;
+	padding: 5px;
+	border: double 5px $fontColor;
+	
+}
+//FOOTER STYLES
+footer{
+	height: 30px;
+	margin-top: 3.4%;
+	
+	padding: 7px;
+	text-align: center;
+	background-color: $darkBackgroundColor;
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.05, $darkBackgroundColor),
+	color-stop(0.95, $baseBackgroundColor)
+	);
+    
+    a{
+        color: $neonLit;
+        
+        &:visited{
+            color: $linkVisited;	
+        }
+    }
+}
