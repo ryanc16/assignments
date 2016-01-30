@@ -1,11 +1,11 @@
 /*CSS Document*/
 //VARIABLES
 $baseBackgroundColor: #1E4456;
-$darkBackgroundColor: #0D3345;
+$darkBackgroundColor: saturate(darken($baseBackgroundColor,5.5%),12%);//#0D3345;
 $neonUnlit: #2B617B;
 $neonLit: lightblue;
 $fontColor: #DDD;
-$linkVisited: #CF81FE;
+$linkVisited: saturate(adjust-color($neonLit,$hue:130),30%);//#CF81FE;
 
 //Import fancy neon font
 @font-face {
