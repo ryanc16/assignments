@@ -295,3 +295,39 @@ footer{
         }
     }
 }
+
+@mixin make-btn($width,$height,$radius){
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+}
+@mixin make-pretty-btn($width,$radius){
+    width: $width;
+    height: $width * 0.4;
+    border-radius: $radius;
+}
+
+.Btn{
+    @include make-pretty-btn(120px,10px);
+    border: 5px double #555;
+	padding: 10px;
+	color: #EEE;
+    font-weight: bold;
+	box-shadow: -1px 1px 10px rgba(0,0,0,0.6);
+	text-shadow: -1px 1px 0px #111;
+    outline:none;
+}
+.submitBtn{
+    @extend .Btn;
+    background-color: $neonUnlit;
+    &:hover{
+        border: 5px double $neonLit;
+    }
+}
+.cancelBtn{
+    @extend .Btn;
+    background-color: maroon;
+    &:hover{
+        border: 5px double lighten(maroon,5%);
+    }
+}

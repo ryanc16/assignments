@@ -196,4 +196,26 @@ footer {
     footer a:visited {
       color: #f69dd1; }
 
+.Btn, .submitBtn, .cancelBtn {
+  width: 120px;
+  height: 48px;
+  border-radius: 10px;
+  border: 5px double #555;
+  padding: 10px;
+  color: #EEE;
+  font-weight: bold;
+  box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.6);
+  text-shadow: -1px 1px 0px #111;
+  outline: none; }
+
+.submitBtn {
+  background-color: #2B617B; }
+  .submitBtn:hover {
+    border: 5px double lightblue; }
+
+.cancelBtn {
+  background-color: maroon; }
+  .cancelBtn:hover {
+    border: 5px double #9a0000; }
+
 /*# sourceMappingURL=site_css.css.map */
