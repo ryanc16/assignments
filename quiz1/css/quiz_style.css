@@ -24,6 +24,9 @@ h1 {
   margin: 10px auto;
   padding: 10px;
   background-color: aliceblue; }
+  #content p {
+    font-family: serif;
+    font-style: normal; }
 
 #list {
   border: 2px solid #064277;
@@ -39,10 +42,6 @@ h3 {
 
 ul {
   margin-left: 50px; }
-
-p {
-  font-family: serif;
-  font-style: normal; }
 
 .samplepara {
   border: 3px solid #58a0e0;

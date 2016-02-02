@@ -1,18 +1,29 @@
+//SASS VARIABLES
+$lightblue: aliceblue;
+$basefont: sans-serif;
+$leftmargin: 50px;
+$padding: 10px;
+
+//SASS MIXINS
+@mixin createborder($weight,$style,$color,$radius){
+    border: $weight $style $color;
+    border-radius: $radius;
+}
+
 /* Quiz styles */
 
 header {
-    border: 2px solid #064277;
-    border-radius: 20px;
+    @include createborder(2px,solid,#064277,20px);
     margin: 10px auto;
-    padding: 10px;
-    background-color: aliceblue;
+    padding: $padding;
+    background-color: $lightblue;
     text-align: center;
 }
 
 body {
     width: 600px;
     margin: auto;
-    font-family:sans-serif;
+    font-family: $basefont;
     font-size: 1em;
     font-style:oblique;
     background-color: #dadadb
@@ -24,17 +35,20 @@ h1 {
 }
 
 #content {
-    border: 2px solid #064277;
-    border-radius: 20px;
+    @include createborder(2px,solid,#064277,20px);
     margin: 10px auto;
-    padding: 10px;
-    background-color: aliceblue;
+    padding: $padding;
+    background-color: $lightblue;
+    
+    p{
+        font-family: serif;
+        font-style:normal;
+    }
 }
 
 #list{
-    border: 2px solid #064277;
-    border-radius: 20px;
-    background-color: aliceblue;
+    @include createborder(2px,solid,#064277,20px);
+    background-color: $lightblue;
 }
 
 h2 {
@@ -42,32 +56,27 @@ h2 {
 }
 
 h3 {
-    margin-left: 50px;
+    margin-left: $leftmargin;
     color:#58a0e0
 }
 
 ul{
-    margin-left: 50px;
+    margin-left: $leftmargin;
 }
 
-p{
-    font-family: serif;
-    font-style:normal;
-}
+
 
 .samplepara {
-    border: 3px solid #58a0e0;
-    border-radius: 5px;
-    padding: 10px;
+    @include createborder(3px,solid,#58a0e0,5px);
+    padding: $padding;
     background-color: white;
 }
 
 footer {
-    border: 2px solid #064277;
-    border-radius: 20px;
+    @include createborder(2px,solid,#064277,20px);
     margin: 10px auto;
-    padding: 10px;
-    background-color: aliceblue;
+    padding: $padding;
+    background-color: $lightblue;
 }
 
 #footer {
@@ -77,5 +86,3 @@ footer {
     color: #064277;
     text-align: center;
 }
-
-
