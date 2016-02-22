@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>APP Club - Members</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom css -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Brand" src="images/AppLogo.png">
+                </a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="events.html">Events Home</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="gamejam.html">GameJam</a></li>
+                            <li><a href="programming.html">Programming Competition</a></li>
+                            <li><a href="fundraisers.html">Fundraisers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="active"><a href="members.html">Members</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Members</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>Member Information</h2>
+                    <p>
+                        <a href="docs/app-constitution.pdf" target="new" class="btn btn-success">Club Constitution</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="extra-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Member Login</h2>
+                    <form id="form-login">
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                <label for="loginEmail">Email</label>
+                                <input type="email" class="form-control" id="loginEmail" name="loginEmail" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                <label for="loginPass">Password</label>
+                                <input type="password" class="form-control" id="loginPass" name="loginPass" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <br>
+                            <button type="submit" class="btn btn-primary">Log In</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2>Member Register</h2>
+                    <form id="form-register">
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                <label for="registerEmail">Email</label>
+                                <input type="email" class="form-control" id="registerEmail" name="registerEmail" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                <label for="registerPass1">Password</label>
+                                <input type="password" class="form-control" id="registerPass1" name="registerPass1" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                <label for="registerPass2">Confirm Password</label>
+                                <input type="password" class="form-control" id="registerPass2" name="registerPass2" placeholder="Confirm Password">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <br>
+                            <button type="submit" class="btn btn-default">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Club Constitution</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2016 APP Club</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery2.2.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
