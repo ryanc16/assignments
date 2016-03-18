@@ -1,0 +1,120 @@
+/*SASS VARIABLES*/
+body {
+  padding-top: 80px;
+  background-color: #333; }
+  body a {
+    color: lightblue; }
+    body a:visited {
+      color: lightblue; }
+    body a:hover {
+      color: steelblue; }
+    body a.btn {
+      color: #E7E7E7 !important;
+      font-weight: bold;
+      text-shadow: 0 0 10px #000; }
+    body a .btn-default {
+      color: #111;
+      font-weight: bold; }
+
+nav {
+  color: #E7E7E7; }
+  nav a.navbar-brand {
+    padding-top: 5px; }
+    nav a.navbar-brand img {
+      height: 40px;
+      margin-top: 0; }
+  nav .dropdown-menu {
+    background-color: #111; }
+    nav .dropdown-menu a {
+      color: darkgray; }
+      nav .dropdown-menu a:hover {
+        background-color: #111;
+        color: #E7E7E7; }
+
+section {
+  color: #E7E7E7; }
+  section#main-content .container {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px; }
+  section#main-content h1 {
+    font-weight: bold;
+    text-align: center; }
+  section#main-content p {
+    font-size: 20px; }
+  section#main-content ul.fundraiser {
+    font-size: 20px;
+    list-style: none;
+    padding: 0; }
+    section#main-content ul.fundraiser span {
+      padding-right: 10px; }
+  section#main-content .panel-heading {
+    background-color: #333;
+    color: #E7E7E7;
+    cursor: pointer; }
+  section#main-content .panel-body {
+    background-color: #222; }
+    section#main-content .panel-body .list-group-item {
+      background-color: #333; }
+  section#main-content table {
+    background-color: #333; }
+    section#main-content table th {
+      background-color: #111; }
+      section#main-content table th:nth-child(1) {
+        width: 30%; }
+    section#main-content table td img {
+      width: 150px;
+      display: block; }
+  section#extra-content p {
+    font-size: 18px; }
+  section#extra-content ul.vertical-list {
+    list-style: none;
+    padding: 0; }
+    section#extra-content ul.vertical-list li {
+      display: block;
+      font-size: 20px;
+      padding-bottom: 10px; }
+      section#extra-content ul.vertical-list li img {
+        width: 50px; }
+
+footer {
+  background: #222;
+  color: #E7E7E7;
+  padding: 30px 0 20px 0; }
+  footer li {
+    float: left;
+    padding: 0 10px 0 10px;
+    list-style: none; }
+  footer p {
+    float: right; }
+  footer a {
+    color: lightblue; }
+    footer a:visited {
+      color: lightblue; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #extra-content {
+    text-align: center; }
+    #extra-content .row div {
+      width: 80%;
+      margin: auto;
+      text-align: left; }
+    #extra-content form {
+      text-align: left; }
+      #extra-content form label {
+        margin-top: 10px; }
+      #extra-content form .btn {
+        margin-left: 50px; } }
+@media (min-width: 481px) and (max-width: 768px) {
+  #extra-content {
+    text-align: center; }
+    #extra-content .row div {
+      width: 80%;
+      margin: auto;
+      text-align: left; }
+    #extra-content form {
+      text-align: left; }
+      #extra-content form .btn {
+        margin-left: 35px; } }
+
+/*# sourceMappingURL=styles.css.map */
