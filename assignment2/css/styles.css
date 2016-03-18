@@ -5,11 +5,16 @@ body {
   body a {
     color: lightblue; }
     body a:visited {
-      color: steelblue; }
+      color: lightblue; }
     body a:hover {
       color: steelblue; }
     body a.btn {
-      color: #E7E7E7 !important; }
+      color: #E7E7E7 !important;
+      font-weight: bold;
+      text-shadow: 0 0 10px #000; }
+    body a .btn-default {
+      color: #111;
+      font-weight: bold; }
 
 nav {
   color: #E7E7E7; }

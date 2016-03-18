@@ -13,13 +13,19 @@ body {
     a {
         color: $link-light;
         &:visited {
-            color: $link-dark;
+            color: $link-light;
         }
         &:hover {
             color: $link-dark;
         }
         &.btn{
             color: $text-white !important;
+            font-weight: bold;
+            text-shadow: 0 0 10px #000;
+        }
+        .btn-default{
+                color: $dark;
+                font-weight: bold;
         }
     }
 }
